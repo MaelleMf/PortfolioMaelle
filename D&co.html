@@ -1,0 +1,194 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="D&co.css">
+    <title>Fleur Home Page</title>
+</head>
+<body>         
+                    <!-- Barre de navigation -->
+  <nav>
+    <div class="nav-container" >
+        <div class="nav-gauche flex">
+            <li><a href="#home">D&CO</a></li>
+        </div>
+        <div class="nav-droite flex">
+            <a href="#news">Collections</a></li>
+            <a href="#apropos">A propos</a></li>
+            <a href="#contact">Contact</a></li>
+            <a class="rose" href="#shop">Boutique</a></li> 
+        </div>
+        <div class="menu-button" id="menuButton">
+            <img src="Medias/hamburger_blanc.png" alt="Menu burger" class="menu-hamburger" >
+        </div>
+            <button class="close-button">x</button>
+    </div>
+  </nav>
+
+                <!--  Partie de la bannière qui contient image de fond -->
+    <header>
+      <section class="Bannière flex">
+        <div class="image_de_fond">
+            <h1>Bouquet de fleurs personnalisé </h1>
+            <p class="sous-titre">Livraison gratuite à partir de 79€ </p>
+            <button id="shop">Boutique</button>
+        </div> 
+        <div class="reseaux flex">
+            <p><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></p>
+            <p><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></p>
+            <p><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></p>
+            <p><i class="fa-solid fa-globe" style="color: #ffffff;"></i></p>
+        </div>
+        </section> 
+    </header>
+ 
+    <main>
+        
+         <!-- Partie des differents services proposés par l'entreprise -->
+          <h2 class="titre flex" id="news"> Nos différents services </h2>
+        <section class="Services flex">
+           
+            <div class="Customisation">
+                <img src="medias/image 1.png" alt="Image de fleur1">
+                <div class="design">
+                <h3> Bouquet customiser </h3>
+                <p> Maecenas sit amet dolor orci. Mauris sit amet varius massa, in vehicula nulla. Cras vehicula urna a eros rhoncus laoreet. Cras vehicula eu mauris eu volutpat. Sed a auctor velit. Nunc laoreet mi sit amet purus mattis, et commodo augue dictum.</p>
+                </div> 
+            </div>
+
+                    <!-- Fleur d'occasion proposées -->
+            <div class="Occasion">
+                <img src="medias/image 2.png" alt="Image de fleur2">
+                <div class="design">
+                <h3> Fleurs d'occasion</h3>
+                <p>Maecenas sit amet dolor orci. Mauris sit amet varius massa, in vehicula nulla. Cras vehicula urna a eros rhoncus laoreet. Cras vehicula eu mauris eu volutpat. Sed a auctor velit. </p>
+                </div>
+            </div>
+
+                <!-- Bouquet préfrabiquer -->
+            <div class="Prefabriquer">
+                <img src="medias/image 3.png" alt="Image de fleur3">
+                <div class="design">
+                <h3>Bouquet préfabriqué</h3>
+                <p> Cras vehicula urna a eros rhoncus laoreet. Cras vehicula eu mauris eu volutpat. Sed a auctor velit. Nunc laoreet mi sit amet purus mattis, et commodo augue dictum. Proin efficitur sollicitudin vestibulum.</p>
+                </div>
+            </div>
+        </section>
+
+                <!-- Bouquet avec d'autres idées  -->
+
+        <section class="Idée flex">
+                <!-- Coté gauche avec le texte -->
+            <div class="gauche flex">
+                <h3> Idées de cadeaux qui durent plus longtemps </h3>
+                <p>Nam vel commodo leo. Integer a auctor dui. Ut id commodo est. Duis semper faucibus quam, non consectetur ex lacinia non. In vitae posuere quam. Aenean semper luctus mollis. Cras volutpat orci pellentesque lacinia auctor. Sed leo magna, tincidunt eu ipsum vitae, rhoncus laoreet dolor.</p>
+                <button class="rose"> Cliquez-ici !</button> <!-- Rose = changement de couleur comme un span -->
+            </div>
+
+             <!-- Coté droit avec l'image -->
+            <div class="droite">
+                <img src="medias/image 4.png" alt="Image de vase">
+            </div>
+        </section>
+
+         <!-- Partie des bouquets les plus poupulaires -->
+        <h4>  Voir ce qui est populaire</h4>
+        <section class="Voir flex" id="apropos">
+             <!--premiere div comprenant l'image-->
+            <div>
+                <img src="medias/image 5.png" alt="image1">
+                 <!-- 2eme div comprenant les emojis ranger en ligne-->
+                <div class=" emoji flex">
+                  <p><i class="fa-solid fa-heart"></i>609 </p>
+                  <p> <i class="fa-solid fa-comment"></i>120</p>
+                  <p><i class="fa-solid fa-share-nodes"></i></p>
+                </div>
+            </div>
+
+                 <!--premiere div comprenant l'image-->
+            <div>
+                <img src="medias/image 7.png" alt="image2">
+
+                <!-- 2eme div comprenant les emojis ranger en ligne-->
+                <div class="emoji flex"> 
+                  <p><i class="fa-solid fa-heart"></i> 540 </p>
+                  <p><i class="fa-solid fa-comment"></i> 133</p>
+                  <p> <i class="fa-solid fa-share-nodes"></i></p>
+                </div>
+            </div>
+
+               <!--premiere div comprenant l'image-->
+            <div>
+                <img src="medias/image 8.png" alt="image3">
+                <!-- 2eme div comprenant les emojis ranger en ligne-->
+            <div class="emoji flex">
+                <p><i class="fa-solid fa-heart"></i> 463</p>
+                <p><i class="fa-solid fa-comment"></i>192</p>
+                <p><i class="fa-solid fa-share-nodes"></i></p>
+            </div>
+            </div>
+            <!--premiere div comprenant l'image-->
+            <div>
+                <img src="medias/image 9.png" alt="image4">
+                <!-- 2eme div comprenant les emojis ranger en ligne-->
+                <div class="emoji flex"> 
+                <p><i class="fa-solid fa-heart"></i> 743</p>
+                <p><i class="fa-solid fa-comment"></i>109</p>
+                <p><i class="fa-solid fa-share-nodes"></i></p>
+            </div>
+            </div>
+        </section>
+
+        <section class="aide flex" id="contact">
+          <div class="arc flex">
+            <h4> Besoin d'aide ? </h4>
+            <p class="flex">Donec hendrerit ex eget enim aliquet euismod at nec dui. Etiam et risus vel nibh commodo gravida non id orci. Nam aliquet et nisi ac pellentesque. <br>Vivamus vel turpis aliquam, feugiat velit id, commodo ante. <br>In viverra tellus in leo tincidunt, sed semper eros semper. </p>
+            <button class="color">Aide</button>
+          </div>  
+        </section>
+    </main>
+
+    <footer class="flex">
+        <section class="footer-gauche flex"> 
+            <h5> D&co </h5>
+            <p> Aenean eget nisl mauris. Vestibulum vestibulum </p>
+            <!-- div de l'adresse email  -->
+            <div>
+                <label for="email">Votre e-mail</label>
+                <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+             <button class="espace"> S'abonner</button>    
+            </div> 
+        </section>
+
+        <section class="footer-droite flex">
+          <div class="info1">
+            <p>+33 000 000 000 </p>
+            <p> Hello@D&co.com</p>
+            <p>Trouver une boutique</p>
+          </div>
+
+          <div class="info2">
+            <p> Nous contacter</p>
+            <p> Commande et paiement</p>
+            <p> Expédition </p>
+            <p> Retours </p>
+            <p> FAQ</p>
+            <p> Guide de soins </p>
+          </div>
+
+          <div class="info3">
+            <p> A propos de nous </p>
+            <p> Carrière </p>
+            <p> Politique de confidentialité </p>
+            <p> Termes et conditions</p>
+            <p>Demande de presse</p>
+          </div>
+    </footer>
+    <script src="D&co.js"></script>
+</body>
+</html>

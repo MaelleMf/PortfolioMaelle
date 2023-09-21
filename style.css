@@ -67,7 +67,6 @@ nav{
 
 
  header{
-    border: solid hotpink; 
     background-attachment: fixed;
     background-image: url(Medias/fondviolet.png);
     background-size: cover;
@@ -85,13 +84,18 @@ nav{
     color: #6C5995;
  }
 
+header button a {
+ text-decoration: none;
+ color: #000;
+}
+
  header .fond{
   background-color: white;
   padding: 2em;
   height: max-content;
   flex-direction: column;
   width: 60%;
-  border:solid firebrick; 
+  
  }
 
 .fond button{
@@ -103,7 +107,6 @@ nav{
  overflow: hidden;
  font-weight: 700;
  padding: 3% 35px;
-
 }
 
  .Informations{
@@ -132,7 +135,6 @@ nav{
 .qualités{
   flex-direction: column;
   background-color:#514078;
-  border: solid aqua;
   color: #F8F8F8;
 }
 
@@ -157,7 +159,6 @@ img{
 .Compétences{
   flex-direction: row;
   justify-content: center;
-  border: solid hotpink;
   background-color: #f8f8f8;
   color: white;
   margin: 1% 2%;
@@ -221,8 +222,8 @@ img{
 .Formations{ 
   padding: 2% 2%;
   margin: 1% 1%;
-  border: solid goldenrod;
 }
+
 .Formations h2{
   color: #42355E;
 }
@@ -329,43 +330,50 @@ img{
       'deco certif japon'
       'deco Mesprojets japon'
       'deco projetjs japon';
-      background-color: #272626;
-      backdrop-filter: blur(5px);
+      background-image: url(Medias/Purple-Anime-Sky-Wallpapers.jpg);
+      background-size: cover;
+      background-position: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
       border: 1px solid #d9bcac;
       border-radius: 20px;
       box-shadow: 1px 1px 2px black;
-      padding: 3rem;
-      gap: 1em;
+      padding: 2% 2%;
+      gap: 1em; 
   }
 
  .Mesprojets{
    grid-area:Mesprojets;
-   background-color:#42355E;
+  color: #F8F8F8;
+  text-shadow: 1px 2px black;
+   font-size: 300%;
+   text-align: center;
  }
 
 .japon{
 grid-area: japon;
-background-color: #d483d0;
+display: flex;
+justify-content: center;
 }
 
-.Deco{
+.deco{
    grid-area: deco;
-   background-color: #d483d0;
 }
 
 .certif{
    grid-area: certif;
-   background-color: #f33fb0;
 }
-.projetjs{
+
+/* .projetjs{
    grid-area: projetjs;
    background-color: #b6a9b1;
-}
+} */
 
-.Mesprojets, .japon img, .Deco img, .projet2 img, .projetjs {object-fit: cover; max-width:100%; height:100%;}
+.Mesprojets, .japon img, .deco img, .certif img, .projetjs {object-fit: cover; max-width:100%; height:100%;}
 
    .contact-form-wrapper {
-      padding: 100px 0;
+      padding: 80px 0;
+
     }
     
     .contact-form {
@@ -409,8 +417,8 @@ background-color: #d483d0;
     }
     
     .contact-form .form-control:focus {
-      border-color: #f33fb0;
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0;
+      border-color: #671d85;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #514078;
     }
     
     .contact-form .title {
@@ -432,7 +440,7 @@ background-color: #d483d0;
     .contact-form .submit-button-wrapper input {
       border: none;
       border-radius: 4px;
-      background-color: #f23292;
+      background-color: #42355E;
       color: white;
       text-transform: uppercase;
       padding: 10px 60px;
@@ -442,6 +450,16 @@ background-color: #d483d0;
     
     .contact-form .submit-button-wrapper input:hover {
       background-color: #d483d0;
+    }
+
+    footer{
+      border-top:solid 1px #42355E ;
+    }
+    footer .reseaux_sociaux{
+      flex-direction: row;
+      justify-content: center;
+      align-self: center;
+      gap: 2%;
     }
     
     @media screen and (max-width: 900px){
@@ -537,4 +555,20 @@ background-color: #d483d0;
         margin-left: 20%;
         align-items: center;
        }
+       
+       .Portfolio { 
+        display: flex;
+        flex-direction: column;
+      }
+      .Portfolio img{
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+      }
+      .Portfolio .deco{
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+      }
+      
       }
